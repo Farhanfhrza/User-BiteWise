@@ -89,7 +89,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     print('Password: $_password');
                   }
                 },
-                child: Text('Register'),
+                child: Text('RegisterBiteWise'),
               ),
             ],
           ),
