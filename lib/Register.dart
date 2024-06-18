@@ -192,7 +192,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             'Buat Akun',
                             style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
-                              fontSize: 16,
+                              fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -205,77 +205,6 @@ class _RegisterPageState extends State<RegisterPage> {
                 ],
               ),
             )
-
-            // Container(
-            //   alignment: Alignment.center,
-            //   child: Column(
-            //     children: <Widget>[
-            //       Padding(
-            //         padding: EdgeInsets.all(16.0),
-            //         child: Form(
-            //           key: _formKey,
-            //           child : SingleChildScrollView(
-            //           child: ListView(
-            //             children: <Widget>[
-            //               TextFormField(
-            //                 decoration: InputDecoration(labelText: 'Username'),
-            //                 validator: (value) {
-            //                   if (value!.isEmpty) {
-            //                     return 'Please enter a username';
-            //                   }
-            //                   return null;
-            //                 },
-            //                 onSaved: (value) {
-            //                   _username = value!;
-            //                 },
-            //               ),
-            //               TextFormField(
-            //                 decoration: InputDecoration(labelText: 'Email'),
-            //                 keyboardType: TextInputType.emailAddress,
-            //                 validator: (value) {
-            //                   if (value!.isEmpty) {
-            //                     return 'Please enter an email';
-            //                   }
-            //                   return null;
-            //                 },
-            //                 onSaved: (value) {
-            //                   _email = value!;
-            //                 },
-            //               ),
-            //               TextFormField(
-            //                 decoration: InputDecoration(labelText: 'Password'),
-            //                 obscureText: true,
-            //                 validator: (value) {
-            //                   if (value!.isEmpty) {
-            //                     return 'Please enter a password';
-            //                   }
-            //                   return null;
-            //                 },
-            //                 onSaved: (value) {
-            //                   _password = value!;
-            //                 },
-            //               ),
-            //               SizedBox(height: 20),
-            //               ElevatedButton(
-            //                 onPressed: () {
-            //                   if (_formKey.currentState!.validate()) {
-            //                     _formKey.currentState!.save();
-            //                     // Perform registration logic here
-            //                     print('Username: $_username');
-            //                     print('Email: $_email');
-            //                     print('Password: $_password');
-            //                   }
-            //                 },
-            //                 child: Text('RegisterBiteWise'),
-            //               ),
-            //             ],
-            //           ),
-            //           ),
-            //         ),
-            //       ),
-            //     ],
-            //   )
-            // )
           ],
         )
       )
