@@ -62,6 +62,7 @@ flutter:
   assets:
   - assets/images/Facebook_Logo.png
   - assets/images/google-logo.png
+  - assets/images/Back.png
   
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
