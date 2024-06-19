@@ -55,7 +55,8 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(
                           color: Color(0xFFF2ECE7),
                           fontSize: 28,
-                          fontWeight: FontWeight.bold,
+                          fontFamily: 'MaisonNeue',
+                          fontWeight: FontWeight.w700,
                         ),
                       ),
                     ),
@@ -70,7 +71,8 @@ class MyApp extends StatelessWidget {
                             style: TextStyle(
                               color: Color(0xFFF2ECE7),
                               fontSize: 16,
-                              fontWeight: FontWeight.normal,
+                              fontFamily: 'MaisonNeue',
+                              fontWeight: FontWeight.w600,
                             ),
                           ),
                         )
@@ -101,7 +103,8 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontSize: 20,
-                          fontWeight: FontWeight.normal,
+                          fontFamily: 'MaisonNeue',
+                          fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
@@ -131,7 +134,8 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontSize: 20,
-                          fontWeight: FontWeight.normal,
+                          fontFamily: 'MaisonNeue',
+                          fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
@@ -222,11 +226,12 @@ class MyApp extends StatelessWidget {
                                               )
                                           ),
                                           child: Text(
-                                            'Buat Akun',
+                                            'Masuk',
                                             style: TextStyle(
                                               color: Color.fromARGB(255, 0, 0, 0),
                                               fontSize: 20,
-                                              fontWeight: FontWeight.bold,
+                                              fontFamily: 'MaisonNeue',
+                                              fontWeight: FontWeight.w700,
                                             ),
                                           ),
                                         ),
@@ -249,7 +254,8 @@ class MyApp extends StatelessWidget {
                           style: TextStyle(
                             color: Color.fromARGB(248, 0, 0, 0),
                             fontSize: 16,
-                            fontWeight: FontWeight.normal,
+                            fontFamily: 'MaisonNeue',
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                         InkWell(
@@ -261,6 +267,8 @@ class MyApp extends StatelessWidget {
                             style: TextStyle(
                               color: Color(0xFF4F6F52),
                               fontSize: 16,
+                              fontFamily: 'MaisonNeue',
+                              fontWeight: FontWeight.w600,
                               decoration: TextDecoration.underline,
                             ),
                           ),

@@ -21,9 +21,13 @@ class MyApp extends StatelessWidget {
               Container(
                 width: double.infinity,
                 height: 400,
-                padding: EdgeInsets.all(20),
+                padding: EdgeInsets.fromLTRB(20, 40, 20, 20),
                 decoration: BoxDecoration(
-                color: Color(0xFF022F30),
+                // color: Color(0xFF022F30),
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/bg-login.png'),
+                    fit: BoxFit.cover
+                  ),
                   borderRadius: BorderRadius.vertical(
                     bottom: Radius.circular(30),
                   )
@@ -39,8 +43,9 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(
                           color: Color(0xFFF2ECE7),
                           fontSize: 52,
-                          fontWeight: FontWeight.bold,
                           height: 1.75,
+                          fontFamily: 'MaisonNeue',
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                     ),
@@ -51,7 +56,8 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(
                           color: Color(0xFFF2ECE7),
                           fontSize: 30,
-                          fontWeight: FontWeight.normal,
+                          fontFamily: 'MaisonNeue',
+                          fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
@@ -59,7 +65,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: 20.0),
+              Spacer(),
 
               Container(
                 alignment: Alignment.bottomCenter,
@@ -92,7 +98,8 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(
                             color: Color.fromARGB(255, 0, 0, 0),
                             fontSize: 20,
-                            fontWeight: FontWeight.normal,
+                          fontFamily: 'MaisonNeue',
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                     ),
@@ -122,7 +129,8 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(
                             color: Color.fromARGB(255, 0, 0, 0),
                             fontSize: 20,
-                            fontWeight: FontWeight.normal,
+                          fontFamily: 'MaisonNeue',
+                          fontWeight: FontWeight.w600,
                           ),
                         ),
                     ),
@@ -157,7 +165,8 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(
                             color: Color.fromARGB(255, 0, 0, 0),
                             fontSize: 20,
-                            fontWeight: FontWeight.normal,
+                          fontFamily: 'MaisonNeue',
+                          fontWeight: FontWeight.w600,
                           ),
                         ),
                     ),
@@ -172,7 +181,8 @@ class MyApp extends StatelessWidget {
                           style: TextStyle(
                             color: Color.fromARGB(248, 0, 0, 0),
                             fontSize: 16,
-                            fontWeight: FontWeight.normal,
+                            fontFamily: 'MaisonNeue',
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                         InkWell(
@@ -183,6 +193,8 @@ class MyApp extends StatelessWidget {
                             'Buat akun di sini!',
                             style: TextStyle(
                                 color: Color(0xFF4F6F52),
+                              fontFamily: 'MaisonNeue',
+                              fontWeight: FontWeight.w600,
                                 fontSize: 16,
                                 decoration: TextDecoration.underline,
                               ),

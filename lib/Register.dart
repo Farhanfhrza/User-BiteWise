@@ -71,7 +71,8 @@ class _RegisterPageState extends State<RegisterPage> {
                       style: TextStyle(
                         color: Color(0xFFF2ECE7),
                         fontSize: 32,
-                        fontWeight: FontWeight.bold,
+                        fontFamily: 'MaisonNeue',
+                        fontWeight: FontWeight.w700,
                       ),
                     ),
                   ),
@@ -79,14 +80,15 @@ class _RegisterPageState extends State<RegisterPage> {
                   Align(
                     alignment: Alignment.center,
                     child: Container(
-                      width: 280,
+                      width: 300,
                       child: Text(
                         'Nikmati rekomendasi gizi terbaik khusus untuk Anda! Segera mendaftar di aplikasi kami sekarang juga.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Color(0xFFF2ECE7),
                           fontSize: 16,
-                          fontWeight: FontWeight.normal,
+                          fontFamily: 'MaisonNeue',
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                     )
@@ -193,7 +195,8 @@ class _RegisterPageState extends State<RegisterPage> {
                             style: TextStyle(
                               color: Color.fromARGB(255, 0, 0, 0),
                               fontSize: 20,
-                              fontWeight: FontWeight.bold,
+                              fontFamily: 'MaisonNeue',
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         ),

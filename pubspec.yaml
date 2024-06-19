@@ -77,7 +77,18 @@ flutter:
   - assets/images/gopay.png
   - assets/images/shopee.png
   - assets/images/dollar.png
-  
+  - assets/images/bg-login.png
+  - assets/fonts/MaisonNeueDemi.otf
+
+  fonts:
+    - family: MaisonNeue
+      fonts:
+        - asset: assets/fonts/MaisonNeueDemi.otf
+          weight: 600
+        - asset: assets/fonts/MaisonNeueMedium.otf
+          weight: 500
+        - asset: assets/fonts/MaisonNeueBold.otf
+          weight: 700
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
