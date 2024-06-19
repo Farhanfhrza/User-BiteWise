@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
+// Commit 1: import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
 }
 
+// Commit 2: class MyApp extends StatelessWidget {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// Commit 3: class MakananAnakScreen extends StatelessWidget {
 class MakananAnakScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -28,114 +30,22 @@ class MakananAnakScreen extends StatelessWidget {
       body: ListView(
         padding: EdgeInsets.all(16.0),
         children: [
-          Section(title: 'Sarapan', items: [
+          // Commit 4: Section "Sarapan"
+          Section(title: "Sarapan", items: [
             MenuItem(
-              color: MenuItem.menuItemColor,
-              title: 'Bubur Ayam dengan Sayur',
-              description: 'Lezat, hangat, bergizi, mengenyangkan.',
+              color: Color(0xFFC3C3C3),
+              title: "Bubur Ayam dengan Sayur",
+              description: "Lezat, hangat, bergizi, mengenyangkan.",
             ),
             MenuItem(
-              color: MenuItem.menuItemColor,
-              title: 'Nasi Kuning Telur Sayur',
-              description: 'Nasi kuning dengan telur dan sayur.',
-              addToCart: true,
-            ),
-          ]),
-          Section(title: 'Makan Siang', items: [
-            MenuItem(
-              color: MenuItem.menuItemColor,
-              title: 'Nasi Campur Tradisional',
-              description: 'Hidangan khas Indonesia yang lezat.',
-            ),
-            MenuItem(
-              color: MenuItem.menuItemColor,
-              title: 'Nasi Merah Tumis Sayur dan Tahu',
-              description: 'Nasi merah, sayuran, tahu, serat.',
-            ),
-          ]),
-          Section(title: 'Makan Malam', items: [
-            MenuItem(
-              color: MenuItem.menuItemColor,
-              title: 'Ayam Serundeng',
-              description: 'Hidangan khas Indonesia yang lezat.',
-            ),
-            MenuItem(
-              color: MenuItem.menuItemColor,
-              title: 'Salad Ayam Panggang',
-              description: 'Salad ayam panggang, sayuran hijau.',
-              addToCart: true,
-            ),
-          ]),
-          Section(title: 'Camilan', items: [
-            MenuItem(
-              color: MenuItem.menuItemColor,
-              title: 'Salad Ayam Panggang',
-              description: 'Salad ayam panggang, sayuran hijau.',
-            ),
-            MenuItem(
-              color: MenuItem.menuItemColor,
-              title: 'Salad Ayam Panggang',
-              description: 'Salad ayam panggang, sayuran hijau.',
+              color: Color(0xFFC3C3C3),
+              title: "Nasi Kuning Telur Sayur",
+              description: "Nasi kuning dengan telur dan sayur.",
               addToCart: true,
             ),
           ]),
         ],
       ),
-    );
-  }
-}
-
-class Section extends StatelessWidget {
-  final String title;
-  final List<Widget> items;
-
-  Section({required this.title, required this.items});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: EdgeInsets.symmetric(vertical: 8.0),
-          child: Text(
-            title,
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-          ),
-        ),
-        Column(
-          children: items,
-        ),
-      ],
-    );
-  }
-}
-
-class MenuItem extends StatelessWidget {
-  final Color color;
-  final String title;
-  final String description;
-  final bool addToCart;
-
-  MenuItem({
-    required this.color,
-    required this.title,
-    required this.description,
-    this.addToCart = false,
-  });
-
-  static const Color menuItemColor = Color(0xFFC3C3C3);
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: CircleAvatar(
-        backgroundColor: color,
-        radius: 20,
-      ),
-      title: Text(title),
-      subtitle: Text(description),
-      trailing: addToCart ? Icon(Icons.add_shopping_cart) : null,
     );
   }
 }
