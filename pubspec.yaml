@@ -79,7 +79,7 @@ flutter:
   - assets/images/dollar.png
   - assets/images/bg-login.png
   - assets/fonts/MaisonNeueDemi.otf
-  - assets/images/Ellipse%1520.png
+#  - assets/images/Ellipse1520.png
 
   fonts:
     - family: MaisonNeue
