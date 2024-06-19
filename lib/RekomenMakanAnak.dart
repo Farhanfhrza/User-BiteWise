@@ -49,3 +49,43 @@ class MakananAnakScreen extends StatelessWidget {
     );
   }
 }
+class Section extends StatelessWidget {
+  final String title;
+  final List<MenuItem> items;
+
+  Section({required this.title, required this.items});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8.0),
+          child: Text(
+            title,
+            style: TextStyle(
+              fontSize: 18.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.green,
+            ),
+          ),
+        ),
+        GridView.builder(
+          shrinkWrap: true,
+          physics: NeverScrollableScrollPhysics(),
+          itemCount: items.length,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 3 / 4,
+            mainAxisSpacing: 8.0,
+            crossAxisSpacing: 8.0,
+          ),
+          itemBuilder: (context, index) {
+            return MenuCard(item: items[index]);
+          },
+        ),
+      ],
+    );
+  }
+}
