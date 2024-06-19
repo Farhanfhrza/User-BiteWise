@@ -60,7 +60,38 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - /home/user/User-BiteWise/asets/images/Ellipse 1520.png
+  - assets/images/Facebook_Logo.png
+  - assets/images/google-logo.png
+  - assets/images/Back.png
+  - assets/images/Back1.png
+  - assets/images/search.png
+  - assets/images/plus.png
+  - assets/images/love.png
+  - assets/images/logo_bitewise.png
+  - assets/images/fork.png
+  - assets/images/BiteWise.png
+  - assets/images/check.png
+  - assets/images/location.png
+  - assets/images/pin.png
+  - assets/images/wallet.png
+  - assets/images/gopay.png
+  - assets/images/shopee.png
+  - assets/images/dollar.png
+  - assets/images/bg-login.png
+  - assets/fonts/MaisonNeueDemi.otf
+  - /home/user/User-BiteWise/asets/images/Ellipse 1520.png
+
+  fonts:
+    - family: MaisonNeue
+      fonts:
+        - asset: assets/fonts/MaisonNeueDemi.otf
+          weight: 600
+        - asset: assets/fonts/MaisonNeueMedium.otf
+          weight: 500
+        - asset: assets/fonts/MaisonNeueBold.otf
+          weight: 700
+  #   - images/a_dot_burr.jpeg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
