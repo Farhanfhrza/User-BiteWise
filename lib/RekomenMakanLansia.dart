@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Rekomendasi Makanan untuk Anak Sehat!',
+      title: 'Gizi tepat untuk lansia Sehat',
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -22,7 +22,7 @@ class MakananAnakScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Rekomendasi Makanan untuk Anak Sehat!'),
+        title: Text('Nutrisi Tepat untuk Kinerja Hebat'),
         leading: Icon(Icons.arrow_back),
       ),
       body: ListView(

@@ -22,7 +22,7 @@ class MakananAnakScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Rekomendasi Makanan untuk Anak Sehat!'),
+        title: Text('Nutrisi Tepat untuk Kinerja Hebat'),
         leading: Icon(Icons.arrow_back),
       ),
       body: ListView(
