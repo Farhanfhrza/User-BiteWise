@@ -22,9 +22,14 @@ class MakananAnakScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Rekomendasi Makanan untuk Anak Sehat!'),
-        leading: Icon(Icons.arrow_back),
+        title: Text('Makanan untuk Anak Sehat'),
+      ),
+      body: Center(
+        child: Text(
+          'Ini adalah halaman rekomendasi makanan untuk anak.',
+          style: TextStyle(fontSize: 24),
+        ),
       ),
     );
-    }
+  }
 }
