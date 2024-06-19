@@ -63,6 +63,13 @@ flutter:
   - assets/images/Facebook_Logo.png
   - assets/images/google-logo.png
   - assets/images/Back.png
+  - assets/images/Back1.png
+  - assets/images/search.png
+  - assets/images/plus.png
+  - assets/images/love.png
+  - assets/images/logo_bitewise.png
+  - assets/images/fork.png
+  - assets/images/BiteWise.png
   
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
